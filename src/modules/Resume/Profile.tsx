@@ -27,7 +27,7 @@ const Profile = () => (
   <>
     <View style={styles.titleWrapper}>   
       <Typography variant='h2' style={styles.title}>Tod Sung</Typography>
-      <Typography variant='subtitle-lg'>Senior Frontend Engineer</Typography>
+      <Typography variant='h5'>Senior Frontend Engineer</Typography>
     </View>
     <View style={styles.info}>   
       <Typography variant="subtitle-md">wlunareve@gmail.com</Typography>
