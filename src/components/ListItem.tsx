@@ -10,7 +10,11 @@ const styles = StyleSheet.create({
 
   bullet: {
     marginRight: 6
-  }
+  },
+
+  content: {
+    lineHeight: 1.5
+  },
 });
 
 interface ListItemProps {
@@ -20,7 +24,7 @@ interface ListItemProps {
 const ListItem = ({ children }: ListItemProps) => (
   <View style={styles.listWrapper}>
     <Typography variant="body-md" style={styles.bullet}>•</Typography>
-    <Typography variant="body-md" style={{lineHeight: 1.5}}>{children}</Typography>
+    <Typography variant="body-md" style={styles.content}>{children}</Typography>
   </View>
 )
 

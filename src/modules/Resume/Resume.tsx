@@ -1,10 +1,12 @@
-import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
+import { Page, View, Document, StyleSheet } from '@react-pdf/renderer';
 import Profile from './Profile';
 import Noodoe from './Experience/Noodoe';
 import DeepQ from './Experience/DeepQ';
 import IISI from './Experience/IISI';
 import { PALETTE } from './Resume.const';
 import Typography from '../../components/Typography';
+import ListItem from '../../components/ListItem';
+import Skills from './Experience/Skills';
 
 const styles = StyleSheet.create({
   main: {
@@ -15,7 +17,7 @@ const styles = StyleSheet.create({
   },
 
   profileSection: {
-    paddingBottom: 12,
+    paddingBottom: 16,
     borderBottom: `3px solid ${PALETTE.border}`
   },
 
@@ -26,6 +28,10 @@ const styles = StyleSheet.create({
 
   companies: {
     gap: 12,
+  },
+
+  skills: {
+    gap: 8
   }
 });
 
@@ -53,7 +59,10 @@ const Resume = () => (
           </View>
         </View>
         <View style={styles.section}>
-          <Text>KEY SKILLS</Text>
+          <Typography variant='h4'>Key Skills</Typography>
+          <View style={styles.skills}>
+            <Skills />
+          </View>
         </View>
       </View>
     </Page>
