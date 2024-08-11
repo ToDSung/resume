@@ -85,11 +85,13 @@ const styles = StyleSheet.create({
 interface TypographyProps {
   variant: 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'subtitle-lg' | 'subtitle-md' | 'body-lg' | 'body-md' | 'body-sm';
 
+  style?: Record<string, unknown>
+
   children: ReactNode;
 }
 
-const Typography = ({ variant, children }:TypographyProps) => (
-  <Text style={{...styles.base, ...styles[variant]}}>
+const Typography = ({ variant, style, children }: TypographyProps) => (
+  <Text style={{...style, ...styles.base, ...styles[variant]}}>
     {children}
   </Text>
 )

@@ -1,9 +1,12 @@
 import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
-import Contact from './Profile/Contact';
+import Profile from './Profile';
 import Noodoe from './Experience/Noodoe';
 import DeepQ from './Experience/DeepQ';
 import IISI from './Experience/IISI';
+import { PALETTE } from './Resume.const';
 import Typography from '../../components/Typography';
+
+
 
 const styles = StyleSheet.create({
   main: {
@@ -13,8 +16,8 @@ const styles = StyleSheet.create({
   },
 
   section: {
-    gap: 4,
-    borderBottom: '3px solid #7799B6'
+    paddingVertical: 5,
+    borderBottom: `3px solid ${PALETTE.border}`
   },
 });
 
@@ -23,9 +26,7 @@ const Resume = () => (
     <Page size="A4">
       <View style={styles.main}>
         <View style={styles.section}>
-          <Typography variant='h5'>Tod Sung</Typography>
-          <Typography variant='h6'>Senior Frontend Engineer</Typography>
-          <Contact />
+          <Profile />
         </View>
         <View style={styles.section}>
           <Text>Experience</Text>
