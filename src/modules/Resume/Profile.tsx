@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
 const Profile = () => (
   <>
     <View style={styles.titleWrapper}>   
-      <Typography variant='h3' style={styles.title}>Tod Sung</Typography>
+      <Typography variant='h2' style={styles.title}>Tod Sung</Typography>
       <Typography variant='subtitle-lg'>Senior Frontend Engineer</Typography>
     </View>
     <View style={styles.info}>   
@@ -34,7 +34,7 @@ const Profile = () => (
       <Typography variant="subtitle-md">|</Typography>
       <Typography variant="subtitle-md">0975-871-937</Typography>
       <Typography variant="subtitle-md">|</Typography>
-      <Typography variant="subtitle-md">Department of Information Management</Typography>  
+      <Typography variant="subtitle-md">國立中正大學資訊管理學系</Typography>  
     </View>
   </>
 )

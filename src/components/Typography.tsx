@@ -28,7 +28,7 @@ const fontWeights = {
 
 const styles = StyleSheet.create({
   base: {
-    fontFamily: 'Noto Sans TC'
+    fontFamily: 'Noto Sans TC',
   },
   
   h2: {
