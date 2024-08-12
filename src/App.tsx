@@ -1,5 +1,5 @@
-import './App.css'
-import Resume from './modules/Resume/Resume'
+import './App.css';
+import Resume from './modules/Resume/Resume';
 import { PDFViewer } from '@react-pdf/renderer';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
         <Resume />
       </PDFViewer>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

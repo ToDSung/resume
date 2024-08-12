@@ -1,6 +1,6 @@
-import { StyleSheet, View } from "@react-pdf/renderer"
-import Typography from "./Typography"
-import { ReactNode } from "react";
+import { StyleSheet, View } from '@react-pdf/renderer';
+import Typography from './Typography';
+import { ReactNode } from 'react';
 
 const styles = StyleSheet.create({
   listWrapper: {
@@ -9,23 +9,27 @@ const styles = StyleSheet.create({
   },
 
   bullet: {
-    marginRight: 6
+    marginRight: 6,
   },
 
   content: {
-    lineHeight: 1.5
+    lineHeight: 1.5,
   },
 });
 
 interface ListItemProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
 const ListItem = ({ children }: ListItemProps) => (
   <View style={styles.listWrapper}>
-    <Typography variant="body-md" style={styles.bullet}>•</Typography>
-    <Typography variant="body-md" style={styles.content}>{children}</Typography>
+    <Typography variant='body-md' style={styles.bullet}>
+      •
+    </Typography>
+    <Typography variant='body-md' style={styles.content}>
+      {children}
+    </Typography>
   </View>
-)
+);
 
-export default ListItem
+export default ListItem;

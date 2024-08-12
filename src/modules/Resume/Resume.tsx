@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
 
 const Resume = () => (
   <Document>
-    <Page size="A4">
+    <Page size='A4'>
       <View style={styles.main}>
         <Profile />
         <AboutMe />
@@ -27,4 +27,4 @@ const Resume = () => (
   </Document>
 );
 
-export default Resume
+export default Resume;
