@@ -1,9 +1,9 @@
-import { Font, StyleSheet, Text } from "@react-pdf/renderer";
-import { ReactNode } from "react";
+import { Font, StyleSheet, Text } from '@react-pdf/renderer';
+import { ReactNode } from 'react';
 
 Font.register({
   family: 'Noto Sans TC',
-  src: '/src/public/fonts/NotoSansTC-Regular.ttf'
+  src: '/src/public/fonts/NotoSansTC-Regular.ttf',
 });
 
 const fontSizes = {
@@ -23,29 +23,28 @@ const fontWeights = {
   regular: 'normal',
   medium: 'medium',
   bold: 'bold',
-} as const; 
-
+} as const;
 
 const styles = StyleSheet.create({
   base: {
     fontFamily: 'Noto Sans TC',
   },
-  
+
   h2: {
     fontSize: fontSizes['8'],
     fontWeight: fontWeights.medium,
   },
-  
+
   h3: {
     fontSize: fontSizes['7'],
     fontWeight: fontWeights.bold,
   },
-  
+
   h4: {
     fontSize: fontSizes['6'],
     fontWeight: fontWeights.bold,
   },
-  
+
   h5: {
     fontSize: fontSizes['5'],
     fontWeight: fontWeights.bold,
@@ -65,8 +64,8 @@ const styles = StyleSheet.create({
     fontSize: fontSizes['2'],
     fontWeight: fontWeights.medium,
   },
-  
-  'body-lg': {    
+
+  'body-lg': {
     fontSize: fontSizes['3'],
     fontWeight: fontWeights.regular,
   },
@@ -75,7 +74,7 @@ const styles = StyleSheet.create({
     fontSize: fontSizes['2'],
     fontWeight: fontWeights.regular,
   },
-  
+
   'body-sm': {
     fontSize: fontSizes['1'],
     fontWeight: fontWeights.regular,
@@ -83,17 +82,27 @@ const styles = StyleSheet.create({
 });
 
 interface TypographyProps {
-  variant: 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'subtitle-lg' | 'subtitle-md' | 'body-lg' | 'body-md' | 'body-sm';
+  variant:
+    | 'h2'
+    | 'h3'
+    | 'h4'
+    | 'h5'
+    | 'h6'
+    | 'subtitle-lg'
+    | 'subtitle-md'
+    | 'body-lg'
+    | 'body-md'
+    | 'body-sm';
 
-  style?: Record<string, unknown>
+  style?: Record<string, unknown>;
 
   children: ReactNode;
 }
 
 const Typography = ({ variant, style, children }: TypographyProps) => (
-  <Text style={{...style, ...styles.base, ...styles[variant]}}>
+  <Text style={{ ...style, ...styles.base, ...styles[variant] }}>
     {children}
   </Text>
-)
+);
 
-export default Typography
+export default Typography;

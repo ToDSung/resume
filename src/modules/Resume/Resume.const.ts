@@ -1,4 +1,4 @@
 export const PALETTE = {
   font: '#102E53',
-  border: '#7799B6'
-}
+  border: '#7799B6',
+};
