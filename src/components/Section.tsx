@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   },
 
   titleWrapper: {
-    width: 120,
+    width: 100,
   },
 
   title: {
