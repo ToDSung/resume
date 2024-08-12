@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
   },
 
   childrenWrapper: {
+    marginTop: 4,
     flex: 1,
   },
   
