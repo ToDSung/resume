@@ -3,6 +3,11 @@ import Typography from "../../components/Typography";
 import { PALETTE } from "./Resume.const";
 
 const styles = StyleSheet.create({
+  profileSection: {
+    paddingBottom: 16,
+    borderBottom: `3px solid ${PALETTE.border}`
+  },
+
   titleWrapper: {
     display: 'flex', 
     flexDirection:'row', 
@@ -24,7 +29,7 @@ const styles = StyleSheet.create({
 });
 
 const Profile = () => (
-  <>
+  <View style={styles.profileSection}>
     <View style={styles.titleWrapper}>   
       <Typography variant='h2' style={styles.title}>Tod Sung</Typography>
       <Typography variant='h5'>Senior Frontend Engineer</Typography>
@@ -36,7 +41,7 @@ const Profile = () => (
       <Typography variant="subtitle-md">|</Typography>
       <Typography variant="subtitle-md">國立中正大學資訊管理學系 2014 ~ 2018</Typography>  
     </View>
-  </>
+  </View>
 )
 
 export default Profile
