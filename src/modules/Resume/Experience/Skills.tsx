@@ -15,6 +15,9 @@ const Skills = () => (
         <ListItem>State management: React Redux / Jotai / TanStack Query</ListItem>
       </View>
       <ListItem>Libraries: i18next / d3.js / Leaflet</ListItem>
+    </View>
+    <View>
+      <Typography variant='h6'>Testing</Typography>
       <ListItem>Jest / Playwright / Cucumber.js</ListItem>
     </View>
     <View>

@@ -34,7 +34,7 @@ const Profile = () => (
       <Typography variant="subtitle-md">|</Typography>
       <Typography variant="subtitle-md">0975-871-937</Typography>
       <Typography variant="subtitle-md">|</Typography>
-      <Typography variant="subtitle-md">國立中正大學資訊管理學系</Typography>  
+      <Typography variant="subtitle-md">國立中正大學資訊管理學系 2014 ~ 2018</Typography>  
     </View>
   </>
 )
