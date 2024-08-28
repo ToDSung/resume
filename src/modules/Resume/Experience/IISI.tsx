@@ -1,11 +1,11 @@
 import { View } from '@react-pdf/renderer';
+import Block from '../../../components/Block';
 import ListItem from '../../../components/ListItem';
-import CompanyBlock from './CompanyBlock';
 
 const IISI = () => (
-  <CompanyBlock
+  <Block
     title='資拓宏宇國際股份有限公司, Full Stack Engineer'
-    duration='Apr 2019 ~ Oct 2021'
+    suffix='Apr 2019 ~ Oct 2021'
   >
     <View>
       <ListItem>
@@ -31,7 +31,7 @@ const IISI = () => (
         Stylelint，確保程式碼支援度、開發速度和品質。
       </ListItem>
     </View>
-  </CompanyBlock>
+  </Block>
 );
 
 export default IISI;

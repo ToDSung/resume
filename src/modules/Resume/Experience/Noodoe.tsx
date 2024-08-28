@@ -1,9 +1,9 @@
 import { View } from '@react-pdf/renderer';
+import Block from '../../../components/Block';
 import ListItem from '../../../components/ListItem';
-import CompanyBlock from './CompanyBlock';
 
 const Noodoe = () => (
-  <CompanyBlock title='Noodoe, Senior Engineer' duration='Oct 2022 ~ Jun 2024'>
+  <Block title='Noodoe, Senior Engineer' suffix='Oct 2022 ~ Jun 2024'>
     <View>
       <ListItem>
         擔任資深前端工程師，進行產品開發迭代，亦負責 code review
@@ -30,7 +30,7 @@ const Noodoe = () => (
         利用 Jotai 和 custom hook 重整資料流程式碼，提升可維護性。
       </ListItem>
     </View>
-  </CompanyBlock>
+  </Block>
 );
 
 export default Noodoe;
