@@ -1,11 +1,11 @@
 import { View } from '@react-pdf/renderer';
+import Block from '../../../components/Block';
 import ListItem from '../../../components/ListItem';
-import CompanyBlock from './CompanyBlock';
 
 const DeepQ = () => (
-  <CompanyBlock
+  <Block
     title='HTC DeepQ AI Healthcare, Senior Frontend Engineer'
-    duration='Oct 2021 ~ Sep 2022'
+    suffix='Oct 2021 ~ Sep 2022'
   >
     <View>
       <ListItem>
@@ -25,7 +25,7 @@ const DeepQ = () => (
         的系統網站，具備快速接手不同 tech stack 的適應能力。
       </ListItem>
     </View>
-  </CompanyBlock>
+  </Block>
 );
 
 export default DeepQ;

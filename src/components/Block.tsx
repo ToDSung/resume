@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { StyleSheet, View } from '@react-pdf/renderer';
-import Typography from '../../../components/Typography';
+import Typography from './Typography';
 
 const styles = StyleSheet.create({
   titleWrapper: {
@@ -14,19 +14,19 @@ const styles = StyleSheet.create({
 interface CompanyBlockProps {
   title: string;
 
-  duration: string;
+  suffix: string;
 
   children: ReactNode;
 }
 
-const CompanyBlock = ({ title, duration, children }: CompanyBlockProps) => (
+const Block = ({ title, suffix, children }: CompanyBlockProps) => (
   <View>
     <View style={styles.titleWrapper}>
       <Typography variant='h6'>{title}</Typography>
-      <Typography variant='h6'>{duration}</Typography>
+      <Typography variant='h6'>{suffix}</Typography>
     </View>
     {children}
   </View>
 );
 
-export default CompanyBlock;
+export default Block;
