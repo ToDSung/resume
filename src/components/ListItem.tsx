@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
   listWrapper: {
     display: 'flex',
     flexDirection: 'row',
+    paddingRight: 16,
   },
 
   bullet: {
