@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
 });
 
 const Skills = () => (
-  <Section title='Key Skills'>
+  <Section title='Key Skills' withBorder>
     <View style={styles.skills}>
       <View>
         <Typography variant='h6'>Soft Skills:</Typography>
@@ -27,7 +27,7 @@ const Skills = () => (
             State management: React Redux / Jotai / TanStack Query
           </ListItem>
         </View>
-        <ListItem>Libraries: i18next / d3.js / Leaflet</ListItem>
+        <ListItem>Libraries: i18next / D3.js / Leaflet</ListItem>
       </View>
       <View>
         <Typography variant='h6'>Testing</Typography>

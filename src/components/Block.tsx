@@ -16,11 +16,13 @@ interface CompanyBlockProps {
 
   suffix?: string;
 
+  style?: Record<string, unknown>;
+
   children: ReactNode;
 }
 
-const Block = ({ title, suffix = '', children }: CompanyBlockProps) => (
-  <View>
+const Block = ({ title, suffix = '', style, children }: CompanyBlockProps) => (
+  <View style={style}>
     <View style={styles.titleWrapper}>
       <Typography variant='h6'>{title}</Typography>
       <Typography variant='h6'>{suffix}</Typography>
