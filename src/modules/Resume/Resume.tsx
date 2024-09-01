@@ -1,12 +1,13 @@
 import { Page, View, Document, StyleSheet } from '@react-pdf/renderer';
 import Profile from './Profile';
-import Skills from './Skills';
 import AboutMe from './AboutMe';
 import Experience from './Experience/Experence';
+import Portofolio from './Portfolio/Portfolio';
+import Skills from './Skills';
 
 const styles = StyleSheet.create({
   main: {
-    margin: 10,
+    margin: 12,
     flexDirection: 'column',
     flex: 1,
     gap: 8,
@@ -20,7 +21,7 @@ const Resume = () => (
         <Profile />
         <AboutMe />
         <Experience />
-        {/* TODO: Portofolio*/}
+        <Portofolio />
         <Skills />
       </View>
     </Page>

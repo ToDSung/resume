@@ -19,10 +19,10 @@ const Noodoe = () => (
       </ListItem>
       <ListItem>
         實作 log management
-        功能，幫助使用者回顧系統操作記錄，減少公司內部營運之成本。{' '}
+        功能，幫助使用者回顧系統操作記錄，減少公司內部營運之成本。
       </ListItem>
       <ListItem>
-        以 TypeScript, react-hook-form, Zod, GraphQL
+        以 TypeScript, Zod, GraphQL
         重構系統功能，透過型別保護，減少不必要的出錯情境。
       </ListItem>
       <ListItem>開發公司自用 UI component library，確保設計一致性。</ListItem>

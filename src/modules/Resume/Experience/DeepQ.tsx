@@ -13,7 +13,7 @@ const DeepQ = () => (
       </ListItem>
       <ListItem>
         運用 React, Redux Observable
-        與團隊成員重構公司產品，提升程式碼可讀性、可維護性。
+        與夥伴重構主要產品，提升程式碼可讀性、可維護性。
       </ListItem>
       <ListItem>分類、重整可複用 React 元件及專案函式庫。</ListItem>
       <ListItem>
