@@ -1,4 +1,4 @@
-import { Font, StyleSheet, Text } from '@react-pdf/renderer';
+import { Font, Link, StyleSheet, Text } from '@react-pdf/renderer';
 import { ReactNode } from 'react';
 
 Font.register({
@@ -107,15 +107,21 @@ interface TypographyProps {
     | 'body-md'
     | 'body-sm';
 
+  link?: string;
+
   style?: Record<string, unknown>;
 
   children: ReactNode;
 }
 
-const Typography = ({ variant, style, children }: TypographyProps) => (
-  <Text style={{ ...style, ...styles.base, ...styles[variant] }}>
-    {children}
-  </Text>
-);
+const Typography = ({ variant, link, style, children }: TypographyProps) => {
+  const content = (
+    <Text style={{ ...style, ...styles.base, ...styles[variant] }}>
+      {children}
+    </Text>
+  );
+
+  return link ? <Link src={link}>{content}</Link> : content;
+};
 
 export default Typography;

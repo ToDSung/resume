@@ -5,7 +5,7 @@ import Section from '../../components/Section';
 
 const styles = StyleSheet.create({
   skills: {
-    gap: 4,
+    gap: 12,
   },
 });
 
