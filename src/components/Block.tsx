@@ -14,6 +14,8 @@ const styles = StyleSheet.create({
 interface CompanyBlockProps {
   title: string;
 
+  titleLink?: string;
+
   suffix?: string;
 
   style?: Record<string, unknown>;
@@ -21,10 +23,18 @@ interface CompanyBlockProps {
   children: ReactNode;
 }
 
-const Block = ({ title, suffix = '', style, children }: CompanyBlockProps) => (
+const Block = ({
+  title,
+  titleLink,
+  suffix = '',
+  style,
+  children,
+}: CompanyBlockProps) => (
   <View style={style}>
     <View style={styles.titleWrapper}>
-      <Typography variant='h6'>{title}</Typography>
+      <Typography variant='h6' link={titleLink}>
+        {title}
+      </Typography>
       <Typography variant='h6'>{suffix}</Typography>
     </View>
     {children}

@@ -3,6 +3,8 @@ import Block from '../../../components/Block';
 import ListItem from '../../../components/ListItem';
 import Typography from '../../../components/Typography';
 
+const BLOG_URL = 'https://tod-blog.vercel.app/';
+
 const styles = StyleSheet.create({
   block: {
     marginTop: 20,
@@ -14,7 +16,7 @@ const styles = StyleSheet.create({
 });
 
 const Blog = () => (
-  <Block title='Personal Blog' style={styles.block}>
+  <Block title='Personal Blog' titleLink={BLOG_URL} style={styles.block}>
     <Typography variant='body-md' style={styles.description}>
       用於置放技術筆記及闡述個人想法的部落格。 部落格由兩個網站所組成，主體為
       Next.js 所建置的 SSG 網站，另一個則是用 docusaurus
