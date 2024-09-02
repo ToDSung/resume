@@ -21,13 +21,11 @@ const Skills = () => (
       </View>
       <View>
         <Typography variant='h6'>Front-end Technologies:</Typography>
-        <View>
-          <ListItem>TypeScript / React / Next.js</ListItem>
-          <ListItem>
-            State management: React Redux / Jotai / TanStack Query
-          </ListItem>
-        </View>
-        <ListItem>Libraries: i18next / D3.js / Leaflet</ListItem>
+        <ListItem>TypeScript / React / Next.js / React Redux / Jotai</ListItem>
+        <ListItem>
+          Libraries: TanStack Query / Zod / React Hook Form / i18next / D3.js /
+          Leaflet
+        </ListItem>
       </View>
       <View>
         <Typography variant='h6'>Testing</Typography>

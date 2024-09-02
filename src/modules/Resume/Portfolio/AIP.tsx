@@ -18,9 +18,9 @@ const AIP = () => (
     <View>
       <ListItem>JavaScript, React, Material UI, redux-observable</ListItem>
       <ListItem>與兩位前端，三位後端工程師共同協作。</ListItem>
-      <ListItem>維護使用 Rxjs 開發的標註醫學影像功能。</ListItem>
+      <ListItem>維護使用 RxJS 開發的標註醫學影像功能。</ListItem>
       <ListItem>
-        使用 firebase aggregation 在 client 端完成 API pagination
+        使用 Firebase aggregation 在 client 端完成 API Pagination。
       </ListItem>
       <ListItem>
         使用 File System API 幫助使用者在 client 端檢查醫學影像。

@@ -33,8 +33,8 @@ const EvConsole = () => (
       <ListItem>
         使用 Linaria 開發 component，透過 zero runtime 提升 performance。
       </ListItem>
-      <ListItem>設計 log management 的翻譯、查詢機制。</ListItem>
-      <ListItem>維護充電流程的 E2E 測試</ListItem>
+      <ListItem>參與設計 log management 的翻譯、查詢機制。</ListItem>
+      <ListItem>維護充電流程的 E2E 測試。</ListItem>
     </View>
   </Block>
 );
